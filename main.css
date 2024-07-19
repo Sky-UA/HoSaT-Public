@@ -2,13 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* z-index: -10; */
+    /*visibility: hidden;*/
 }
-body {
-    background: #fdfdfd;
-    font-size: 1rem;
+
+html, body {
+    height: 100%;
+    background-color: black;
     width: 250vmin;
 }
+
+.row {
+    display: flex;
+}
+
+.cell {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightgrey;
+    /*background-color: #ababab;*/
+    /*box-sizing: border-box;*/
+    /*user-select: none;*/
+    /*font-size: small;*/
+    /*background-image: url('images/units/swordman.png');*/
+    /*background-size: 60px 60px;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.unit {
+    /*width: 600px;*/
+    /*height: 600px;*/
+    position: absolute;
+    /* z-index: 1; */
+    box-sizing: border-box;
+    /*font-size: 1.5vmin;*/
+    /*text-align: center;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    /* z-index: -5; */
+    /* opacity: 0.3; */
+    visibility: hidden;
+}
+
+.available-cell {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+.path-cell {
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+
 img.unit1 {
     width: 23vmin;
     padding: 0;
@@ -20,3 +67,17 @@ img.unit2 {
 img.unit3 {
     width: 32vmin;
 }
+
+#cover {
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    /* color: white; */
+    background-color: white;
+    /* visibility: hidden; */
+}
+
+div#cover {}
