@@ -1,9 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* z-index: -10; */
-    /*visibility: hidden;*/
+    /*box-sizing: border-box;*/
 }
 
 html, body {
@@ -42,7 +40,9 @@ html, body {
     background-position: center;
     /* z-index: -5; */
     /* opacity: 0.3; */
-    visibility: hidden;
+    /* visibility: hidden; */
+    /* position: relative; */
+    /* z-index: 1; */
 }
 
 .available-cell {
@@ -68,16 +68,72 @@ img.unit3 {
     width: 32vmin;
 }
 
+.attribute {
+    position: absolute;
+    /* width: 43.2px; */
+    /* height: 36.8px; */
+    /* z-index: 2; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 30%;
+    height: 20%;
+    /* text-align: center; */
+    /* line-height: 10%; */
+    /* display: flex; */
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.attribute.health {}
+
+.health {
+    left: 0;
+    top: 0;
+    background-image: url('../HoSaT/images/attributes/health111.png');
+    /* z-index: 250; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+.damage {
+    right: 0;
+    top: 0;
+    background-image: url('../HoSaT/images/attributes/damage.png');
+    color: red;
+}
+.initiative {
+    background-image: url('../HoSaT/images/attributes/initiative.png');
+}
+.speed {
+    background-image: url('../HoSaT/images/attributes/speed.png');
+}
+
+#king1 {
+    background-image: url('../HoSaT/images/units/king1.png');
+}
+#king2 {
+    background-image: url('../HoSaT/images/units/king2.png');
+}
+#king3 {
+    background-image: url('../HoSaT/images/units/king3.png');
+}
+
 #cover {
-    width: 100%;
-    height: 100%;
-    z-index: 200;
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 0; */
-    /* color: white; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300%;
+    height: 200%;
     background-color: white;
     /* visibility: hidden; */
 }
-
-div#cover {}
+#board {
+    visibility: hidden;
+}
+#units {
+    visibility: hidden;
+}

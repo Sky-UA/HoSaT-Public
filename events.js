@@ -1,16 +1,20 @@
 function onUnitClick() {
+    for ( let unit of units ) unit.isChoosen = false;
+
     let $unit = $( this );
     let unit = getUnitByElement( $unit );
-    // let unitSpeed = unit.speed;
-    // let unitIndexes = unit.indexes;
+    unit.isChoosen = true;
 
-    showAvailableCells( unit );
+    // showAvailableCells( unit );
 
 
 }
 
 function onCellClick() {
-    //
+    let $cell = $( this );
+    let cell = getCellByElement( $cell );
+
+    if ( cell.isAvailable === true ) moveUnitByPath();
 }
 
 /////////////////////////////////////////////////////////////
