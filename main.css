@@ -129,11 +129,11 @@ img.unit3 {
     width: 300%;
     height: 200%;
     background-color: white;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 #board {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 #units {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
